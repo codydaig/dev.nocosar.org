@@ -5,3 +5,13 @@ angular.module('taskbook').controller('TaskbookController', ['$scope', '$statePa
 function TaskbookController($scope, $stateParams, $location, Authentication, Taskbook){
   $scope.authentication = Authentication;
 }
+
+angular.module('taskbook').controller('VehiclesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Vehicles', VehiclesController]);
+
+function VehiclesController($scope, $stateParams, $location, Authentication, Vehicles){
+  $scope.authentication = Authentication;
+
+  $scope.find = function () {
+    $scope.vehicles = Vehicles.query();
+  };
+}

@@ -6,7 +6,13 @@ angular.module('taskbook').run(['Menus',
     // Add the Taskbook Menu Item
     Menus.addMenuItem('topbar', {
       title: 'Taskbook',
-      state: 'taskbook.dashboard'
+      state: 'taskbook.dashboard',
+      type: 'dropdown'
+    });
+
+    Menus.addSubMenuItem('topbar', 'taskbook.dashboard', {
+      title: 'Manage Vehicles',
+      state: 'taskbook.vehicles'
     });
   }
 ]);

@@ -16,6 +16,10 @@ angular.module('taskbook').config(['$stateProvider',
       .state('taskbook.dashboard', {
         url: '',
         templateUrl: '/modules/taskbook/views/dashboard-taskbook.client.view.html'
+      })
+      .state('taskbook.vehicles', {
+        url: '/vehicles',
+        templateUrl: '/modules/taskbook/views/list-vehicles.client.view.html'
       });
   }
 ]);
