@@ -6,7 +6,7 @@ angular.module('taskbook').run(['Menus',
     // Add the Taskbook Menu Item
     Menus.addMenuItem('topbar', {
       title: 'Taskbook',
-      state: 'taskbook'
+      state: 'taskbook.dashboard'
     });
   }
 ]);

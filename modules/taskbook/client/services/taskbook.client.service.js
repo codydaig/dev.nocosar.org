@@ -1,8 +1,8 @@
 'use strict';
 
 angular.module('taskbook')
-  .factory('Taskbook', TaskbookFactory);
+  .factory('Taskbook', ['$resource', TaskbookFactory]);
 
-function TaskbookFactory() {
-  
+function TaskbookFactory($rescource) {
+  return {}
 }
